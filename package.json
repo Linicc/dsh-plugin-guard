@@ -1,0 +1,43 @@
+{
+  "name": "dsh-plugin-guard",
+  "version": "0.1.0",
+  "description": "Plugin-mount identity guard for DeepSeek Harness: prevents malformed patch insert rows from failing every DeepSeek request with REQUEST_EXTENSION.",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "guard",
+    "request-extension"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Linicc/dsh-plugin-guard.git"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

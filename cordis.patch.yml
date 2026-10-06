@@ -1,0 +1,5 @@
+# dsh-plugin-guard 的组合包配置层。由 profile 的 dsh.profile.bundles 列出本包时应用。
+# 按【包名】引用而不是相对路径 —— 已安装的 npm 包由 Node 模块解析定位。
+- insert:
+    - id: plugin-guard
+      name: dsh-plugin-guard

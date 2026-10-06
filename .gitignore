@@ -1,0 +1,4 @@
+# lib/ 必须提交：使用者从 npm/git 安装后不会跑构建步骤
+node_modules/
+*.log
+.DS_Store
